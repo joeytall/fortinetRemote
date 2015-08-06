@@ -28,10 +28,23 @@
         </div>
         <div class="col-md-4">
           <div class="input-group">
-            <input class="btn btn-default" id="btnReset" type="button" value="Reset Time"/>
+            <input class="btn btn-default" id="btnReset" type="button" value="Reset Time Filter"/>
           </div>
         </div>
       </div>
+      <table id="testtable" class="table table-bordered">
+        <thead>
+          <tr>
+            <th style="display: none">time</th>
+            <th data-dynatable-sorts="time">Date</th>
+            <th>Filename</th>
+            <th>Action</th>
+            <th>Submit-Type</th>
+            <th data-dynatable-sorts="level">Rating</th>
+            <th style="display: none">level</th>
+          </tr>
+        </thead>
+      </table>
       {% if metafile %}
       <table id="datatable" class="table table-bordered">
         <thead>

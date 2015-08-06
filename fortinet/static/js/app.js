@@ -76,3 +76,28 @@ function filterTime(){
     $(this).parent().show();
   });
 }
+
+var previous = "";
+
+setInterval(function() {
+    var ajax = new XMLHttpRequest();
+    ajax.onreadystatechange = function() {
+        if (ajax.readyState == 4) {
+            if (ajax.responseText != previous) {
+              if (previous !== "")
+              {
+                $("#datatable").attr("data", ajax.responseText);
+                alert("New threads detected, the page is being reloaded.");
+                // $("#datatable").dynatable({
+                //   dataset:{
+                //             records: ajax.responseText
+                //           }
+                // });
+              }
+                previous = ajax.responseText;
+            }
+        }
+    };
+    ajax.open("POST", "/static/metafiles/sampleMetaFile.json", true); //Use POST to avoid caching
+    ajax.send();
+}, 1000);
