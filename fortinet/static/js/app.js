@@ -10,9 +10,11 @@ $(document).ready(function(){
   });
 $('#startTimeReset').click(function(){
   $('#starttime').datetimepicker('reset');
+  filterTime();
 });
 $('#endTimeReset').click(function(){
   $('#endtime').datetimepicker('reset');
+  filterTime();
 });
 });
 
