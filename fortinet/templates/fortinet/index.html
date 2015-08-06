@@ -5,27 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     {% load staticfiles %}
-    <link href="{% static 'jquery-dynatable/jquery.dynatable.css' %}" rel='stylesheet' type="text/css">
     <link href="{% static 'bootstrap-3.3.5-dist/css/bootstrap.css' %}" rel='stylesheet' type="text/css" media="screen">
+    <link href="{% static 'jquery-dynatable/jquery.dynatable.css' %}" rel='stylesheet' type="text/css">
     <link href="{% static 'css/style.css' %}" rel='stylesheet' type="text/css">
+    <link href="{% static 'css/jquery.datetimepicker.css' %}" rel='stylesheet' type="text/css">
   </head>
   <body>
     <h1 align="center">Fortinet Threads Monitor</h1>
-    <!-- <div class="container"> -->
-    <!--   <div class="row"> -->
-    <!--     <div class='col&#45;sm&#45;6'> -->
-    <!--       <div class="form&#45;group"> -->
-    <!--         <div class='input&#45;group date' id='datetimepicker1'> -->
-    <!--           <input type='text' class="form&#45;control" /> -->
-    <!--           <span class="input&#45;group&#45;addon"> -->
-    <!--             <span class="glyphicon glyphicon&#45;calendar"></span> -->
-    <!--           </span> -->
-    <!--         </div> -->
-    <!--       </div> -->
-    <!--     </div> -->
-    <!--   </div> -->
-    <!-- </div> -->
+    <input type="text" value="2015/01/01 00:00" class="datetimepicker" id="starttime"/>
+    <input id="startTimeReset" type="button" value="reset"/>
+    <input type="text" value="2015/12/31 00:00" class="datetimepicker" id="endtime"/>
+    <input id="endTimeReset" type="button" value="reset"/>
+    <input class="btn" id="timeFilter" type="button" value="Filter"/>
     <div class="container">
+      {% load bootstrap3 %}
       {% if metafile %}
       <table id="datatable" class="table table-straped">
         <thead>
@@ -57,9 +50,9 @@
     </div>
 
     <script src="static/js/jquery-1.11.3.js"></script>
+    <script src="static/js/jquery.datetimepicker.js"></script>
     <script src="static/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
     <script src="static/jquery-dynatable/jquery.dynatable.js"></script>
-    <script src="static/bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
     <script src="static/js/app.js"></script>
   </body>
 </html>

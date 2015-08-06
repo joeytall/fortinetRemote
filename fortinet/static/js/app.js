@@ -3,7 +3,17 @@ $(document).ready(function(){
   copyTime();
   $("#datatable").dynatable();
   paintThreads();
-  $('#datetimepicker1').datetimepicker();
+  $('.datetimepicker').datetimepicker()
+  .change(function(){
+    $(this).attr("intTime", convertTimeToInt($(this).val()));
+    filterTime();
+  });
+$('#startTimeReset').click(function(){
+  $('#starttime').datetimepicker('reset');
+});
+$('#endTimeReset').click(function(){
+  $('#endtime').datetimepicker('reset');
+});
 });
 
 function paintThreads(){
@@ -42,8 +52,26 @@ function copyLevels(){
 function copyTime(){
   $("#datatable td:first-child").each(function(){
     var time = $(this).next().text(),
-        objTime = new Date(time),
-        intTime = objTime.getTime();
+  intTime = convertTimeToInt(time);
   $(this).text(intTime);
+  });
+}
+
+function convertTimeToInt(time){
+  var objTime = new Date(time),
+      intTime = objTime.getTime();
+  return intTime;
+}
+
+function filterTime(){
+  var start = $("#starttime").attr("intTime"),
+      end = $("#endtime").attr("intTime"),
+      threadTime;
+  $("#datatable td:first-child").each(function(){
+    threadTime = $(this).text();
+    if (threadTime > end || threadTime < start)
+      $(this).parent().hide();
+    else
+      $(this).parent().show();
   });
 }
