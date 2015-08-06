@@ -8,12 +8,11 @@ $(document).ready(function(){
     $(this).attr("intTime", convertTimeToInt($(this).val()));
     filterTime();
   });
-$('#startTimeReset').click(function(){
-  $('#starttime').datetimepicker('reset');
-  filterTime();
-});
-$('#endTimeReset').click(function(){
-  $('#endtime').datetimepicker('reset');
+$('#btnReset').click(function(){
+  $(".datetimepicker").datetimepicker('reset')
+  .each(function(){
+    $(this).attr("intTime", convertTimeToInt($(this).val()));
+  });
   filterTime();
 });
 });
@@ -72,8 +71,8 @@ function filterTime(){
   $("#datatable td:first-child").each(function(){
     threadTime = $(this).text();
     if (threadTime > end || threadTime < start)
-      $(this).parent().hide();
+    $(this).parent().hide();
     else
-      $(this).parent().show();
+    $(this).parent().show();
   });
 }

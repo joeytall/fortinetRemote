@@ -12,8 +12,13 @@ h1 {
   height: 60px;
 }
 
+table a{
+  color: white !important;
+}
+
 table th {
   font-size: 18px;
+  background-color: #024457;
 }
 
 .medium {
@@ -46,4 +51,8 @@ table th {
   background-color: #FF9999;
   color: white;
   font-weight: bold;
+}
+
+#btnReset {
+  margin-bottom: 20px;
 }
