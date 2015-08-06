@@ -1,0 +1,49 @@
+body {
+  padding: 0 2em;
+  font-family: Arial, sans-serif;
+  color: #024457;
+  background: #f2f2f2;
+}
+
+h1 {
+  font-family: Verdana;
+  font-weight: normal;
+  color: #024457;
+  height: 60px;
+}
+
+table th {
+  font-size: 18px;
+}
+
+.medium {
+  background-color: #FFE0C2;
+}
+
+.high{
+  background-color: #FFB2B2;
+  color: white;
+  font-weight: bold;
+}
+
+.clean{
+  /* background-color: #FFE6E6; */
+}
+
+.low-risk{
+  background-color: #FFE6E6;
+}
+
+.medium-risk{
+  background-color: #FFCCCC;
+}
+
+.high-risk{
+  background-color: #FFB2B2;
+}
+
+.malicious {
+  background-color: #FF9999;
+  color: white;
+  font-weight: bold;
+}
