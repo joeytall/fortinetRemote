@@ -1,25 +1,29 @@
-$(document).ready(function(){
+var TimeFilter = (function(){
+  var pub = {},
+    pvt = {};
+
+pvt.init = (function(){
   $('.datetimepicker').datetimepicker()
   .change(function(){
-    $(this).attr("intTime", convertTimeToInt($(this).val()));
-    filterTime();
+    $(this).attr("intTime", pub.convertTimeToInt($(this).val()));
+    pub.filterTime();
   });
 $('#btnReset').click(function(){
   $(".datetimepicker").datetimepicker('reset')
   .each(function(){
-    $(this).attr("intTime", convertTimeToInt($(this).val()));
+    $(this).attr("intTime", pub.convertTimeToInt($(this).val()));
   });
-filterTime();
+pub.filterTime();
 });
-});
+})();
 
-function convertTimeToInt(time){
+pub.convertTimeToInt = function(time){
   var objTime = new Date(time),
       intTime = objTime.getTime();
   return intTime;
-}
+};
 
-function filterTime(){
+pub.filterTime = function(){
   var start = $("#starttime").attr("intTime"),
       end = $("#endtime").attr("intTime"),
       threadTime;
@@ -30,7 +34,10 @@ function filterTime(){
     else
     $(this).parent().show();
   });
-}
+};
+
+return pub;
+})();
 
 var DataTable = (function(){
   var pub = {},
@@ -91,20 +98,16 @@ pvt.enhanceData = function(){
       break;
   }
     thread.level = level;
-    thread.time = convertTimeToInt(thread.date);
+    thread.time = TimeFilter.convertTimeToInt(thread.date);
     thread.submittype = thread["submit-type"];
     delete thread["submit-type"];
   }
 };
 
-return pub;
-
-})();
-
-
+pvt.listener = (function(){
 var previous = "";
 
-var listener = setInterval(function() {
+setInterval(function() {
   var ajax = new XMLHttpRequest();
   ajax.onreadystatechange = function() {
     if (ajax.readyState == 4) {
@@ -126,3 +129,10 @@ var listener = setInterval(function() {
   ajax.open("POST", "/static/metafiles/sampleMetaFile.json", true); //Use POST to avoid caching
   ajax.send();
 }, 1000);
+})();
+
+return pub;
+
+})();
+
+

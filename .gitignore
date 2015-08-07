@@ -1,2 +1,5 @@
 *.sqlite3
 *.pyc
+metafiles
+!sampleMetaFile.json
+fortinet/*.pyc
