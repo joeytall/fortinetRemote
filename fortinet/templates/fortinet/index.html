@@ -32,47 +32,19 @@
           </div>
         </div>
       </div>
-      <table id="testtable" class="table table-bordered">
+      <table id="datatable" class="table table-bordered" >
         <thead>
           <tr>
             <th style="display: none">time</th>
             <th data-dynatable-sorts="time">Date</th>
             <th>Filename</th>
             <th>Action</th>
-            <th>Submit-Type</th>
+            <th id="submittype">Submittype</th>
             <th data-dynatable-sorts="level">Rating</th>
             <th style="display: none">level</th>
           </tr>
         </thead>
       </table>
-      {% if metafile %}
-      <table id="datatable" class="table table-bordered">
-        <thead>
-          <tr>
-            <th style="display: none">time</th>
-            <th data-dynatable-sorts="time">Date</th>
-            <th>Filename</th>
-            <th>Action</th>
-            <th>Submit-Type</th>
-            <th data-dynatable-sorts="level">Rating</th>
-            <th style="display: none">level</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for thread in metafile %}
-          <tr>
-            <td></td>
-            <td>{{thread.date}}</td>
-            <td>{{thread.filename}}</td>
-            <td>{{thread.action}}</td>
-            <td>{{thread.submittype}}</td>
-            <td>{{thread.rating}}</td>
-            <td></td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-      {% endif %}
     </div>
 
     <script src="static/js/jquery-1.11.3.js"></script>

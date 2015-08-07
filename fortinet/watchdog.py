@@ -24,7 +24,10 @@ class MyHandler(PatternMatchingEventHandler):
     def on_created(self, event):
         path = event.src_path
         self.process(event)
-        self.addNewData(path)
+        try:
+          self.addNewData(path)
+        except ValueError:
+          print "Oops! something went wrong."
 
     def addNewData(self, filename):
         jsonfile = open(filename)

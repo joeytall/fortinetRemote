@@ -409,7 +409,7 @@
       obj.$element.append(rows);
 
       obj.$element.trigger('dynatable:afterUpdate', rows);
-      paintThreads();
+      DataTable.paintThreads();
     };
   };
 

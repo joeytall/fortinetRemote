@@ -8,205 +8,44 @@
     }, 
     {
         "action": "files-added", 
-        "date": "Jan 2, 2015 13:11:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Feb 1, 2015 10:11:59", 
-        "filename": "helper.exe", 
-        "rating": "medium-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Mar 1, 2015 13:31:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Oct 1, 2015 14:11:59", 
+        "date": "Mar 3, 2015 13:11:59", 
         "filename": "helper.exe", 
         "rating": "malicious", 
         "submit-type": "FG300B3910602113/root"
     }, 
     {
-        "action": "files-added", 
-        "date": "Jan 3, 2015 17:11:59", 
-        "filename": "helper.exe", 
-        "rating": "medium-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Dec 1, 2015 19:11:59", 
-        "filename": "helper.exe", 
-        "rating": "clean", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
         "action": "files-deleted", 
-        "date": "May 1, 2015 13:10:59", 
+        "date": "Jan 2, 2015 13:10:59", 
         "filename": "virus.exe", 
         "rating": "high-risk", 
         "submit-type": "FG300B3910602113/root"
     }, 
     {
         "action": "files-added", 
-        "date": "June 2, 2015 13:11:59", 
+        "date": "Dec 3, 2015 13:11:59", 
         "filename": "helper.exe", 
         "rating": "low-risk", 
         "submit-type": "FG300B3910602113/root"
     }, 
     {
         "action": "files-deleted", 
-        "date": "May 1, 2015 13:10:59", 
+        "date": "Feb 1, 2015 13:10:59", 
         "filename": "virus.exe", 
-        "rating": "high-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "June 2, 2015 13:11:59", 
-        "filename": "helper.exe", 
         "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-deleted", 
-        "date": "May 1, 2015 13:10:59", 
-        "filename": "virus.exe", 
-        "rating": "high-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "June 2, 2015 13:11:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-deleted", 
-        "date": "May 1, 2015 13:10:59", 
-        "filename": "virus.exe", 
-        "rating": "high-risk", 
         "submit-type": "FG300B3910602113/root"
     }, 
     {
         "action": "files-added", 
         "date": "June 3, 2015 13:11:59", 
         "filename": "helper.exe", 
-        "rating": "low-risk", 
+        "rating": "medium-risk", 
         "submit-type": "FG300B3910602113/root"
     }, 
     {
         "action": "files-deleted", 
-        "date": "Jan 1, 2015 13:10:59", 
+        "date": "Mar 1, 2015 13:10:59", 
         "filename": "virus.exe", 
-        "rating": "high-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Jan 2, 2015 13:11:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Feb 1, 2015 10:11:59", 
-        "filename": "helper.exe", 
-        "rating": "medium-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Mar 1, 2015 13:31:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Oct 1, 2015 14:11:59", 
-        "filename": "helper.exe", 
-        "rating": "malicious", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Jan 3, 2015 17:11:59", 
-        "filename": "helper.exe", 
-        "rating": "medium-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "Dec 1, 2015 19:11:59", 
-        "filename": "helper.exe", 
         "rating": "clean", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-deleted", 
-        "date": "May 1, 2015 13:10:59", 
-        "filename": "virus.exe", 
-        "rating": "high-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "June 2, 2015 13:11:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-deleted", 
-        "date": "May 1, 2015 13:10:59", 
-        "filename": "virus.exe", 
-        "rating": "high-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "June 2, 2015 13:11:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-deleted", 
-        "date": "May 1, 2015 13:10:59", 
-        "filename": "virus.exe", 
-        "rating": "high-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "June 2, 2015 13:11:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-deleted", 
-        "date": "May 1, 2015 13:10:59", 
-        "filename": "virus.exe", 
-        "rating": "high-risk", 
-        "submit-type": "FG300B3910602113/root"
-    }, 
-    {
-        "action": "files-added", 
-        "date": "June 3, 2015 13:11:59", 
-        "filename": "helper.exe", 
-        "rating": "low-risk", 
         "submit-type": "FG300B3910602113/root"
     }
 ]
