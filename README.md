@@ -18,6 +18,9 @@ Develop a program in Django and Python that reads “threat” meta files and re
 
 ![picture alt](https://github.com/joeytall/fortinetRemote/blob/master/fortinet/static/page.png)
 
+You should see this at  `http://127.0.0.1:8000/`
+
+#### Available Features
 1. Every Column can be sorted.
 
 2. The entire table can be searched.
