@@ -12,9 +12,23 @@ Develop a program in Django and Python that reads “threat” meta files and re
 4. In **Fortinet** folder, start watchdog:
 `python watchdog.py`
 
+*Watchdog has to be started in order to monitor new meta files.*
+
 ## Usage
 
 ![picture alt](https://github.com/joeytall/fortinetRemote/blob/master/fortinet/static/page.png)
+
+1. Every Column can be sorted.
+
+2. The entire table can be searched.
+
+3. The two datetimepicker dropdown can be selected to filter the time period.
+
+4. Drop new thread meta files in **Fortinet/static/metafiles** to update the table (works if watchdog.py is running)
+
+5. Threads per page can be changed.
+ 
+6. Reset button resets the time period filter.
 
 ## Contributing
 
